@@ -5,5 +5,68 @@
 }
 body {
     background: #39289F;
-background: linear-gradient(100deg, rgba(57, 40, 159, 1) 0%, rgba(66, 47, 156, 1) 100%);
+    background: linear-gradient(100deg, rgba(57, 40, 159, 1) 0%, rgba(66, 47, 156, 1) 100%);
+    font-family: "Poppins", sans-serif;
+}
+.headder{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.right{
+    gap: 5px;
+
+}
+h1{
+    color: white;
+}
+.headder a{
+    color: white;
+}
+.hero{
+     margin: 80px;
+     padding: 0% 100px;
+     display: flex;
+     justify-content: space-between;
+}
+.left p{
+    color: white;
+    padding: 10px 0px;
+}
+.left h4{
+    color:orange;
+    padding: 5px 0px;
+}
+button{
+     color: black;
+    background-color: orange;
+    border-radius: 15px;
+ width: 100px;
+    height: 30px;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 100px;
+}
+.next-left{
+    color: white;
+}
+.next-right button{
+    color: white;
+    background-color: #51449c;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.next-img{
+    display: flex;
+    gap: 10px;
+    padding: 20px 100px;
+}
+.next-img h3{
+    text-align: center;
+    color: white;
 }
