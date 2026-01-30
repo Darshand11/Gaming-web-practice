@@ -1,0 +1,9 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background: #39289F;
+background: linear-gradient(100deg, rgba(57, 40, 159, 1) 0%, rgba(66, 47, 156, 1) 100%);
+}
