@@ -9,42 +9,78 @@ body {
     font-family: "Poppins", sans-serif;
 }
 .headder{
-    height: 50px;
-    width: auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    align-items: center;
+    padding: 20px 60px;
+
 }
+
 .right{
-    gap: 5px;
+    justify-content: space-evenly;
 
 }
 h1{
     color: white;
 }
 .headder a{
+    text-decoration: none;
     color: white;
 }
 .hero{
-     margin: 80px;
-     padding: 0% 100px;
-     display: flex;
-     justify-content: space-between;
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; 
 }
+
 .left p{
     color: white;
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 .left h4{
     color:orange;
     padding: 5px 0px;
 }
+.right button{
+     color: black;
+    background-color: orange;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 0 15px orange;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.right button:hover{
+    box-shadow: 0 0 30px orange, 0 0 60px orange;
+}
+.left button{
+     color: black;
+    background-color: orange;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 0 15px orange;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.left button:hover{
+    box-shadow: 0 0 30px orange, 0 0 60px orange;
+}
+
 button{
      color: black;
     background-color: orange;
     border-radius: 15px;
- width: 100px;
+    width: 100px;
     height: 30px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .next{
     display: flex;
@@ -63,10 +99,248 @@ button{
 }
 .next-img{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding: 20px 100px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .next-img h3{
     text-align: center;
     color: white;
+}
+.mid-section{
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
+.next1{
+      padding: 5% 100px;
+      color: white;
+
+}
+.next1 h3{
+    padding-bottom: 30px;
+}
+.image{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.image img{
+    width: 100%;
+    max-width: 1146px;
+}
+
+.glass{
+    margin: 80px auto;
+    width: 70%;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    background: rgba(255,255,255,0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+.glow-btn{
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: orange;
+    font-size: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 15px orange;
+    transition: 0.3s;
+}
+.glow-btn:hover{
+    box-shadow: 0 0 30px orange, 0 0 60px orange;
+}
+.gradient-text{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(270deg, orange, #ff4ecd, #6cf);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.login-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, orange, #ff3cac);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+
+.modal-content{
+    background: rgba(255,255,255,0.15);
+    width: 320px;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    margin: 150px auto;
+    text-align: center;
+    position: relative;
+}
+
+
+.modal-content span{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content input{
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px;
+    background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.contact-box{
+    width: 50%;
+}
+
+.contact-box h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-box p{
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.contact-form textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button{
+    width: 160px;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, orange, #ff3cac);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255,165,0,0.5);
+}
+
+
+.contact-info{
+    width: 35%;
+    background: rgba(255,255,255,0.08);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.contact-info h3{
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    margin-bottom: 12px;
+}
+
+
+.socials{
+    margin-top: 25px;
+}
+
+.socials a{
+    margin-right: 15px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover{
+    transform: scale(1.3);
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    color: #ccc;
+    font-size: 14px;
+}
+@media (max-width: 768px){
+
+    .hero{
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .next,
+    .next-img,
+    .next1{
+        padding: 20px;
+    }
+
+    .headder{
+        flex-direction: column;
+        gap: 15px;
+    }
 }
